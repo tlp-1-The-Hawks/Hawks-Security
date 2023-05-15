@@ -1,4 +1,8 @@
 main{
-    height: 85vh;
-    border: 10px black;
+   height: 85vh;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
