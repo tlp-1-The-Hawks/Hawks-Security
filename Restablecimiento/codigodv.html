@@ -11,11 +11,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/Css/stylerdc.css" />
+    <link rel="shortcut icon" href="/img/Logo.png" />
   </head>
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary rounded"
+        class="navbar navbar-expand-lg rounded"
         aria-label="Thirteenth navbar example"
       >
         <div class="container-fluid">
@@ -30,12 +31,13 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#">Hawks Security</a>
+            <a class="navbar-brand col-lg-3 me-0" href="#"
+              ><img src="/img/logo.png"
+            /></a>
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
               <li class="nav-item">
-                <h4>Restablece tu contraseña</h4>
+                <h4 class="text-white">Restablecimiento de contraseñas</h4>
               </li>
             </ul>
           </div>
@@ -46,7 +48,7 @@
       <article>
         <section>
           <form class="border border-dark p-3">
-            <h1 class="h3 mb-3 fw-normal">
+            <h1 class="h3 mb-3 fw-normal text-white">
               Ingrese el codigo que le hemos enviado
             </h1>
             <div class="form-floating">
@@ -59,8 +61,10 @@
               />
               <label for="floatingInput">0000 0000 0000</label>
             </div>
-            <p class="p-3">Te enviaremos un codigo de confirmación</p>
-            <button class="w-100 btn btn-lg btn-dark" type="submit">
+            <p class="p-3 text-white">
+              Te enviaremos un codigo de confirmación
+            </p>
+            <button type="submit">
               <a
                 class="text-decoration-none text-white"
                 href="newpassword.html"
@@ -73,7 +77,23 @@
       </article>
     </main>
     <footer>
-      <p>©2023 HawksSecurity</p>
+      <div class="container-fluid">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="#"
+              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >
+              <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-white">© 2023 Hawks Security</span>
+          </div>
+        </footer>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
