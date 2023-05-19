@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/Css/stylerdc.css" />
-    <link rel="shortcut icon" href="/img/Logo.png" />
+    <link rel="shortcut icon" href="/img/logo.png" />
   </head>
   <body>
     <header>
@@ -47,31 +47,24 @@
     <main class="d-flex justify-content-center align-items-center">
       <article>
         <section>
-          <form class="border border-dark p-3">
+          <form
+            action="/Restablecimiento/newpassword.html"
+            class="border border-dark p-3"
+          >
             <h1 class="h3 mb-3 fw-normal text-white">
               Ingrese el codigo que le hemos enviado
             </h1>
-            <div class="form-floating">
-              <input
-                type="number"
-                class="form-control"
-                id="floatingInput"
-                placeholder="0000 0000 0000"
-                required
-              />
-              <label for="floatingInput">0000 0000 0000</label>
-            </div>
+            <input
+              type="number"
+              class="form-control"
+              id="floatingInput"
+              placeholder="0000 0000 0000"
+              required
+            />
             <p class="p-3 text-white">
               Te enviaremos un codigo de confirmación
             </p>
-            <button type="submit">
-              <a
-                class="text-decoration-none text-white"
-                href="newpassword.html"
-              >
-                Confirmar
-              </a>
-            </button>
+            <button class="text-white" type="submit">Confirmar</button>
           </form>
         </section>
       </article>
