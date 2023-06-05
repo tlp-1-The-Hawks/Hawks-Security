@@ -11,7 +11,7 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/Css/inicio.css" />
+    <link rel="stylesheet" href="/Css/listado/listado.css" />
     <link rel="icon" type="image/x-icon" href="/img/Mi proyecto.png" />
   </head>
   <body>
@@ -31,9 +31,9 @@
               <div class="col d-flex justify-content-center">
                 <h4>
                   <a
-                    class="nav-link active bg-dark rounded text-white p-lg-2 p-sm-3 p-3"
+                    class="nav-link active p-2"
                     aria-current="page"
-                    href="index.html"
+                    href="/Html/inicio.html"
                     >Inicio</a
                   >
                 </h4>
@@ -41,34 +41,31 @@
               <div class="col d-flex justify-content-center">
                 <h4>
                   <a
-                    class="nav-link active p-2"
-                    href="/Html/listado de cuentas/listado.html"
+                    class="nav-link active bg-dark rounded text-white p-2"
+                    href="proyectos.html"
                     >Listados de cuentas</a
                   >
                 </h4>
               </div>
               <div class="col d-flex justify-content-center">
                 <h4>
-                  <a class="nav-link active p-2 text-center" href="#"
+                  <a class="nav-link active p-2" href="habilidades.html"
                     >Soporte</a
                   >
                 </h4>
               </div>
-
-              <div class="col d-flex justify-content-center mh-50">
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasNavbar"
-                  aria-controls="offcanvasNavbar"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
             </div>
           </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             class="offcanvas offcanvas-end configuraciones"
             tabindex="-1"
@@ -125,69 +122,23 @@
         </div>
       </nav>
     </header>
-    <main class="m-5">
-      <section>
-        <div class="container px-4 py-5 text-center" id="featured-3">
-          <h2 class="pb-2">¿Que desea realizar?</h2>
-          <div
-            class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-center"
-          >
-            <div class="feature col">
-              <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="95"
-                  height="95"
-                  fill="currentColor"
-                  class="bi bi-hammer"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"
-                  />
-                </svg>
-              </div>
-              <h3 class="fs-2 text-body-emphasis">Crear listado</h3>
-              <p>
-                Crear tus listados de tus cuentas para tener una mejor
-                organización y gestion, a su vez evita el olvido de las mismas.
-              </p>
-              <button class="bg-dark">
-                <a
-                  class="text-decoration-none text-white"
-                  href="#"
-                  class="icon-link"
-                >
-                  Crear
-                </a>
-              </button>
-            </div>
-            <div class="feature col">
-              <div
-                class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
-              >
-                <img class="w-25" src="/img/basurero.png" alt="" />
-              </div>
-              <h3 class="fs-2 text-body-emphasis">Eliminar listado</h3>
-              <p>
-                Descarta los listados de las cuentas que ya no utilices, así
-                tendras mejor organizadas las cuentas con mayor prioridad.
-              </p>
-              <button class="bg-dark">
-                <a
-                  class="text-decoration-none text-white"
-                  href="#"
-                  class="icon-link"
-                >
-                  Eliminar
-                </a>
-              </button>
-            </div>
+    <main>
+      <div class="container m-5">
+        <div class="row">
+          <div class="col">
+            <h4 class="text-center">Nombre</h4>
+          </div>
+          <div class="col">
+            <h4 class="text-center">Fecha</h4>
+          </div>
+          <div class="col">
+            <h4>Ultimo uso</h4>
+          </div>
+          <div class="col">
+            <h4>Nombre</h4>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
