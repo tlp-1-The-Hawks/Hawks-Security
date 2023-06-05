@@ -22,7 +22,7 @@ main {
 
 .formulario {
     margin: 50px;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -49,7 +49,7 @@ form .username {
 }
 
 .username input {
-    width: 100px;
+    width: 100%;
     padding: 0 5px;
     height: 40px;
     border: none;
@@ -59,7 +59,7 @@ form .username {
 
 .username label {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 5%;
     color: silver;
     transform: translateY(-50%);
@@ -108,17 +108,18 @@ form .password {
 }
 
 .password input {
-    width: 100px;
+    width: 100%;
     padding: 0 5px;
     height: 40px;
     border: none;
     background: none;
     outline: none;
+    color: white    ;
 }
 
 .password label {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 5%;
     color: silver;
     transform: translateY(-50%);
