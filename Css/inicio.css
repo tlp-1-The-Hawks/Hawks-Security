@@ -1,6 +1,9 @@
 header{
     background-color:gray;
 }
+nav{
+    background-color: gray;
+}
 body{
     background-color: silver;
 }
@@ -9,4 +12,11 @@ main h2{
 }
 .configuraciones{
     background-color:gray;
+}
+.logo{
+    height: 50px;
+}
+footer{
+    background-color: gray;
+    height: 67px;
 }
