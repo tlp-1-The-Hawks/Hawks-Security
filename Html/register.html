@@ -12,72 +12,61 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/Css/register.css" />
+    <link rel="stylesheet" href="/Css/registro/register.css" />
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg rounded"
-        aria-label="Thirteenth navbar example"
-      >
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample11"
-            aria-controls="navbarsExample11"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href=""
-              ><img src="/img/Mi proyecto.png"
-            /></a>
-            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-              <li class="nav-item">
-                <h4 class="text-white">Inicio de Sesión</h4>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <header class="d-flex">
+      <div class="d-flex align-items-center">
+        <img src="/img/Mi proyecto.png" alt="" />
+      </div>
+      <nav class="container d-flex justify-content-center align-items-center">
+        <h4 class="text-black">Registra tu cuenta aquí</h4>
       </nav>
     </header>
     <section class="form-register">
-      <h4>Formulario de registro</h4>
+      <h4 class="text-center">Complete el formulario:</h4>
       <input
         class="controls"
         type="text"
         name="nombres"
         id="nombres"
-        placeholder="ingrese su nombre"
+        placeholder="Ingrese su nombre"
       />
       <input
         class="controls"
         type="text"
         name="apellido"
         id="apellido"
-        placeholder="ingrese su apellido"
+        placeholder="Ingrese su apellido"
       />
       <input
         class="controls"
         type="email"
         name="correo"
         id="correo"
-        placeholder="ingrese su correo"
+        placeholder="Ingrese su correo"
       />
       <input
         class="controls"
         type="password"
         name="cotraseña"
         id="contraseña"
-        placeholder="ingrese su contraseña"
+        placeholder="Ingrese su contraseña"
       />
-      <p>Estoy de acuerdo con <a href="#">terminos y condiciones</a></p>
-      <input class="botons" type="submit" value="registrar" />
-      <p><a href="incio_De_Secion.html">¿ya tienes cuenta?</a></p>
+      <div class="d-flex justify-content-center">
+        <input type="checkbox" />
+        <p class="m-2">
+          Estoy de acuerdo con <a href="#">terminos y condiciones</a>
+        </p>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-outline-dark w-75 py-2" type="submit">
+          Registrarme
+        </button>
+      </div>
+      <p class="m-4">
+        <a href="incio_De_Secion.html">¿Ya tienes una cuenta?</a>
+      </p>
     </section>
     <footer>
       <div class="container-fluid">
@@ -93,7 +82,7 @@
                 <use xlink:href="#bootstrap"></use>
               </svg>
             </a>
-            <span class="mb-3 mb-md-0 text-white">© 2023 Hawks Security</span>
+            <span class="mb-3 mb-md-0 text-black">© 2023 Hawks Security</span>
           </div>
         </footer>
       </div>
