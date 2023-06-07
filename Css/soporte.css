@@ -1,0 +1,144 @@
+/* Header */
+header {
+    background-color: gainsboro;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+}
+
+header h3 {
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+h1 {
+    color: #000;
+}
+
+.logo span {
+    color: #b70e21;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background-color: #222222;
+}
+
+.contact-form form {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #000;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background-color: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+
+/* Mediaquery */
+
+@media (min-width: 900px) {
+    body {
+        padding: 0 4rem;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 2em;
+        text-align: left;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 120px;
+    background-color: gainsboro;
+    height: 67px;
+}

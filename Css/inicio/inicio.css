@@ -1,6 +1,10 @@
+/* Header */
 nav{
     background-color: gainsboro;
 }
+
+/* body */
+
 body{
     background-color: whitesmoke;
 }
@@ -13,7 +17,10 @@ main h2{
 .logo{
     height: 50px;
 }
+
+/* Footer */
+
 footer{
     background-color: gainsboro;
-    height: 67px;
+    height: 98px;
 }
