@@ -2,8 +2,7 @@ body{
     background-color: purple;
 }
 main{
-   height: 85vh;
-   background-color: whitesmoke;
+height: 85vh;
 }
 header{
     background-color: gainsboro;
@@ -13,8 +12,8 @@ header img{
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+-webkit-appearance: none; 
+margin: 0; 
 }
 footer {
     height: 50px;
