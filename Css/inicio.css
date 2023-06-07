@@ -1,0 +1,26 @@
+/* Header */
+nav{
+    background-color: gainsboro;
+}
+
+/* body */
+
+body{
+    background-color: whitesmoke;
+}
+main h2{
+    border-bottom: solid 2px black;
+}
+.configuraciones{
+    background-color:gray;
+}
+.logo{
+    height: 50px;
+}
+
+/* Footer */
+
+footer{
+    background-color: gainsboro;
+    height: 98px;
+}
