@@ -54,17 +54,19 @@
                   placeholder="name@example.com"
                   required
                 />
-                <label for="floatingInput"
-                  >Ingrese su Usuario/correo/telefono</label
-                >
+                <label for="floatingInput">
+                  Ingrese su Usuario/correo/telefono
+                </label>
               </div>
               <div class="form-floating m-1">
                 <input
-                  ype="password"
+                  type="password"
                   class="form-control"
                   id="floatingPassword"
                   placeholder="Password"
                   required
+                  minlength="6"
+                  maxlength="12"
                 />
                 <label for="floatingPassword">Ingrese su contraseña</label>
               </div>
@@ -74,9 +76,12 @@
                 </button>
               </div>
               <h6 class="text-center">
-                <a href="#" class="text-decoration-none text-dark"
-                  >¿No tienes una cuenta?</a
+                <a
+                  href="/Html/Restablecimiento/restablecimiento.html"
+                  class="text-decoration-none text-dark"
                 >
+                  Has olvidado tu contraseña?
+                </a>
               </h6>
               <h6 class="text-center">
                 <a

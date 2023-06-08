@@ -1,26 +1,22 @@
-/* Header */
-header {
+nav{
     background-color: gainsboro;
-    width: 100%;
 }
 
-header img {
+.configuraciones{
+    background-color:gray;
+}
+.logo{
     height: 50px;
-}
-
-header h3 {
-    color: #000;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 body {
     background-color: whitesmoke;
     color: #fff;
     font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
+}
+
+main {
+    margin-bottom: 70px;
 }
 
 .content {
@@ -30,7 +26,7 @@ body {
     padding: 1.5em;
 }
 
-.logo {
+.logo2 {
     text-align: center;
     font-size: 3em;
     padding-top: 3rem;
@@ -41,7 +37,7 @@ h1 {
     color: #000;
 }
 
-.logo span {
+.logo2 span {
     color: #b70e21;
 }
 
@@ -54,7 +50,7 @@ h1 {
 }
 
 .contact-form {
-    background-color: #222222;
+    background-color: rgb(151, 151, 151);
 }
 
 .contact-form form {
@@ -70,13 +66,13 @@ h1 {
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
+    color: #000;
     border-bottom: 1px solid #d63031;
 }
 
 .contact-form form button {
     background: #b70e21;
-    color: #fff;
+    color: #000;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -91,7 +87,7 @@ h1 {
 }
 
 .contact-info {
-    background-color: #000;
+    background-color: gainsboro;
 }
 
 .contact-info h4,
@@ -106,18 +102,14 @@ h1 {
     padding: 0;
 }
 
-
 .contact-info ul li {
     padding: .3em;
 }
 
-
 /* Mediaquery */
 
 @media (min-width: 900px) {
-    body {
-        padding: 0 4rem;
-    }
+    
 
     .contact-wrapper {
         display: grid;
@@ -136,9 +128,7 @@ h1 {
     }
 }
 
-/* Footer */
-footer {
-    margin-top: 120px;
+footer{
     background-color: gainsboro;
     height: 67px;
 }
