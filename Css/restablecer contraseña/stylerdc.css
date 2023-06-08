@@ -1,5 +1,5 @@
 body{
-    background-color: purple;
+    background-color: whitesmoke;
 }
 main{
 height: 85vh;
@@ -17,7 +17,7 @@ margin: 0;
 }
 footer {
     height: 50px;
-    background-color: gray;
+    background-color: gainsboro;
 }
 form{
     background-color: black;
