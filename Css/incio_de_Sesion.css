@@ -10,11 +10,17 @@ header img {
 
 /* Inicio de Sesión */
 .logo{
-    width: 400px;
+    margin-top: 100PX;
+    width: 300px;
 }
 body {
     background-color: whitesmoke;
 }
+
+main {
+    max-height: 1368px;
+}
+
 form{
     width: 300px;
 }

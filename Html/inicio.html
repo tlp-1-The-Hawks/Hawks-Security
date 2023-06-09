@@ -31,7 +31,7 @@
               <div class="col d-flex justify-content-center">
                 <h4>
                   <a
-                    class="nav-link active bg-dark rounded text-white p-lg-2 p-sm-3 p-3"
+                    class="nav-link active p-2"
                     aria-current="page"
                     href="index.html"
                     >Inicio</a
@@ -41,7 +41,7 @@
               <div class="col d-flex justify-content-center">
                 <h4>
                   <a
-                    class="nav-link active p-2"
+                    class="nav-link active p-lg-2 p-sm-3 p-3"
                     href="/Html/listado de cuentas/listado.html"
                     >Listados</a
                   >
@@ -49,7 +49,9 @@
               </div>
               <div class="col d-flex justify-content-center">
                 <h4>
-                  <a class="nav-link active p-2 text-center" href="#"
+                  <a
+                    class="nav-link active p-2 text-center"
+                    href="/Html/soporte.html"
                     >Soporte</a
                   >
                 </h4>
@@ -89,9 +91,9 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Link</a>
@@ -118,6 +120,16 @@
                       <a class="dropdown-item" href="#">Something else here</a>
                     </li>
                   </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Html/incio_De_Sesion.html">
+                    <button
+                      class="btn btn-outline-dark w-100 py-2"
+                      type="submit"
+                    >
+                      Cerrar sesión
+                    </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -194,23 +206,19 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <footer>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center">
       <div class="container-fluid">
-        <footer
-          class="d-flex flex-wrap justify-content-between align-items-center"
-        >
-          <div class="col-md-4 d-flex align-items-center">
-            <a
-              href="#"
-              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-            >
-              <svg class="bi" width="30" height="24">
-                <use xlink:href="#bootstrap"></use>
-              </svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-black">© 2023 Hawks Security</span>
-          </div>
-        </footer>
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="#"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-black">© 2023 Hawks Security</span>
+        </div>
       </div>
     </footer>
   </body>
