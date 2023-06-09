@@ -5,6 +5,8 @@ $username = 'root';
 $password = '';
 $database = 'security-hawks';
 
+$conexion=mysqli_connect("$server","$username","","$database");
+
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
 } catch (PDOException $e) {

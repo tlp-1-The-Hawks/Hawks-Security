@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Incio de sesión</title>
+    <title>Inicio de Sesión</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/img/Logo(Mejorado).png" />
     <!-- Boostrap -->
@@ -15,8 +15,8 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="/Css/incio_de_Sesion.css" />
-    <link rel="icon" type="image/x-icon" href="/img/Mi proyecto.png" />
+    <link rel="stylesheet" href="../Css/incio_de_Sesion.css" />
+    <link rel="icon" type="image/x-icon" href="../img/Mi proyecto.png" />
   </head>
   <body>
     <header class="d-flex">
@@ -34,7 +34,7 @@
           <div class="col d-flex">
             <div class="row text-center">
               <div class="text-center m-2">
-                <img class="logo" src="/img/Mi proyecto.png" alt="" />
+                <img class="logo" src="../img/Mi proyecto.png" alt="" />
               </div>
               <p class="fw-semibold">
                 Olvídate de memorizar docenas de contraseñas complicadas, con
@@ -45,10 +45,11 @@
             </div>
           </div>
           <div class="col d-flex align-items-center justify-content-center">
-            <form action="/Html/inicio.html">
+            <form action="../php/validacion.php" method="POST" id="formulario">
               <h1 class="h3 mb-3 fw-normal text-center">Inicio de Sesión</h1>
               <div class="form-floating m-1">
                 <input
+                  name="email"
                   type="email"
                   class="form-control"
                   id="floatingInput"
@@ -61,6 +62,7 @@
               </div>
               <div class="form-floating m-1">
                 <input
+                  name="password"
                   type="password"
                   class="form-control"
                   id="floatingPassword"
@@ -76,24 +78,18 @@
                   Iniciar Sesión
                 </button>
               </div>
+              <span id="mensaje_error"></span>
               <h6 class="text-center m-3">
                 <a
-                  href="/Html/Restablecimiento/restablecimiento.html"
+                  href="../Html/Restablecimiento/restablecimiento.html"
                   class="text-decoration-none text-dark"
-                  >Restablecer contraseña</a
+                >
+                  ¿Has olvidado tu contraseña?</a
                 >
               </h6>
               <h6 class="text-center">
                 <a
-                  href="/Html/Restablecimiento/restablecimiento.html"
-                  class="text-decoration-none text-dark"
-                >
-                  Has olvidado tu contraseña?
-                </a>
-              </h6>
-              <h6 class="text-center">
-                <a
-                  href="/Html/register.html"
+                  href="../php/register.php"
                   class="text-decoration-none text-dark"
                   >Registrarme</a
                 >

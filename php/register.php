@@ -44,7 +44,7 @@
       </nav>
 </header>
     <main>
-      <form action="#" method="POST">
+      <form action="../html/incio_De_Sesion.html" method="POST">
       <section class="form-register">
       <h4 class="text-center">Complete el formulario:</h4>
       <input name="nombre" type="text" placeholder="Ingrese su nombre" class="controls" require>
@@ -65,7 +65,7 @@
           </button>
         </div>
         <p class="m-2">
-          <a class="" href="/Html/incio_De_Sesion.html">¿Ya tienes una cuenta?</a>
+          <a class="" href="../Html/incio_De_Sesion.html">¿Ya tienes una cuenta?</a>
         </p>      
       </section>
       </form>
