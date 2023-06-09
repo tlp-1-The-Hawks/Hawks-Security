@@ -1,6 +1,8 @@
 /* Header */
 nav{
     background-color: gainsboro;
+    justify-items: center;
+
 }
 
 /* body */
@@ -21,11 +23,21 @@ main h2{
 /* Footer */
 
 footer{
-    background-color: gainsboro;
+    background-color: #a9a9a9;
+    color: white;
     height: 98px;
 }
 
+.configuracionBoton{
+  background-color: #a9a9a9 ;
+}
 
+.boton1{
+  background-color: #333;
+  color: #1133;
+  border: none;
+  border-radius: 3%;
+}
 
 .dark-mode {
     background-color: #333;
@@ -34,7 +46,7 @@ footer{
   }
   
   .dark-mode .navbar {
-    background-color: #181818;
+    background-color: #a9a9a9;
     color: white;
   }
   
@@ -42,6 +54,7 @@ footer{
     background-color: #595959;
     color: white;
   }
+
   .mode{
     border: none;
     background: none;
