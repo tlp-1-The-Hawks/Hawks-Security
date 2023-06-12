@@ -9,7 +9,13 @@ nav{
 
 body{
     background-color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
 }
+
+main {
+  height: 560px;
+}
+
 main h2{
     border-bottom: solid 2px black;
 }
