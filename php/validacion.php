@@ -1,6 +1,6 @@
 <?php
 
-include('C:\xampp\htdocs\The-Hawks\tp-1\php\database.php');
+include('database.php');
 
 $EMAIL=$_POST['email'];
 $PASSWORD=$_POST['password'];
