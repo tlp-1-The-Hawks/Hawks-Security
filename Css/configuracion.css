@@ -1,18 +1,27 @@
 
 
 
-
 .dark-mode {
   background-color: #333;
-  color: #fff;
+  color: #b1ee08;
+
 }
 
 .dark-mode .navbar {
-  background-color: #222;
-  color: #fff;
+  background-color: #04b3e9;
+  color: #fbff00;
 }
 
 .dark-mode .btn {
-  background-color: #555;
-  color: #fff;
+  background-color: #83077d;
+  color: #ff2121;
+}
+.mode{
+  border: solid 2px 1px blanchedalmond;
+  border-radius: 10%;
+  background-color: #595959;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #a4a4a4;
+  justify-content: center;
+
 }

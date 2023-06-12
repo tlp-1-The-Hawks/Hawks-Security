@@ -132,3 +132,28 @@ footer{
     background-color: gainsboro;
     height: 67px;
 }
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+  
+  }
+  
+  .dark-mode .navbar {
+    background-color: #a9a9a9;
+    color: white;
+  }
+  
+  .dark-mode .btn {
+    background-color: #595959;
+    color: white;
+  }
+
+  .mode{
+    border: none;
+    background: none;
+  }
+
+  .configuraciones{
+    background-color:#f5f5f5;
+}
