@@ -9,6 +9,8 @@ nav{
 
 body{
     background-color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 main h2{
     border-bottom: solid 2px black;
