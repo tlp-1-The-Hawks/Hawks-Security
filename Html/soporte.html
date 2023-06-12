@@ -11,15 +11,15 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/Css/soporte.css" />
     <link rel="icon" type="image/x-icon" href="/img/Mi proyecto.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
       <nav class="navbar fixed-top position-relative">
         <div class="container-fluid">
-          <div class="d-flex align-items-center justify-content-center h-100">
+          <div class="d-flex align-items-center">
             <img
               class="logo d-flex align-content-center"
               src="/img/Mi proyecto.png"
@@ -42,8 +42,8 @@
               <div class="col d-flex justify-content-center">
                 <h4>
                   <a
-                    class="nav-link active p-lg-2 p-sm-3 p-3 text-black"
-                    href="/Html/listado de cuentas/listado.html"
+                    class="nav-link active lg-2 sm-3 p-3 text-black"
+                    href="/Html/listado.html"
                     >Listados</a
                   >
                 </h4>
@@ -60,6 +60,7 @@
 
               <div class="col d-flex justify-content-center mh-50">
                 <button
+                  class="configuracionBoton"
                   class="navbar-toggler"
                   type="button"
                   data-bs-toggle="offcanvas"
@@ -92,12 +93,14 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <button class="mode" id="dark-mode-toggle">
+                    Cambiar color
+                  </button>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -107,20 +110,32 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Idiomas
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="/Html/inicio.html"
+                        >Español</a
+                      >
                     </li>
                     <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a
+                        class="dropdown-item"
+                        href="/Lo Mismo pero en ingles/inicio.html"
+                        >ingles</a
+                      >
                     </li>
                   </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Html/incio_De_Sesion.html">
+                    <button
+                      class="btn btn-outline-dark w-100 py-2"
+                      type="submit"
+                    >
+                      Cerrar sesión
+                    </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -207,12 +222,6 @@
       </div>
   </main>
   
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
     <footer>
       <div class="container-fluid">
         <footer
@@ -233,4 +242,17 @@
       </div>
     </footer>
   </body>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#dark-mode-toggle").click(function () {
+      $("body").toggleClass("dark-mode");
+    });
+  });
+</script>
 </html>
