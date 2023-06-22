@@ -1,0 +1,40 @@
+<%- include('../../partials/header') %>
+<title>Restablecimiento</title>
+<link
+  rel="stylesheet"
+  href="../../Css/restablecer contraseña/stylerdc.css"
+/>
+</head>
+<body>
+<header class="d-flex">
+  <div class="d-flex align-items-center">
+    <img src="../../img/Mi proyecto.png" alt="" />
+  </div>
+  <nav class="container d-flex justify-content-center align-items-center">
+    <h4 class="text-black">Restablecimiento de contraseñas</h4>
+  </nav>
+</header>
+<main class="d-flex justify-content-center align-items-center">
+  <article>
+    <section>
+      <form action="./codigodv.html" class="border border-dark p-3">
+        <h1 class="h3 mb-3 fw-normal text-white text-center">
+          Ingrese su correo
+        </h1>
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+          required
+          aria-label="ingrese su Email"
+        />
+        <p class="p-3 text-white">
+          Te enviaremos un codigo de confirmación
+        </p>
+        <button class="text-white" type="submit">Enviar</button>
+      </form>
+    </section>
+  </article>
+</main>
+<%- include('../partials/footer') %>
