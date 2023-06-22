@@ -16,5 +16,8 @@
     "mysql2": "^3.4.0",
     "nodemon": "^2.0.22",
     "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "colors": "^1.4.0"
   }
 }
