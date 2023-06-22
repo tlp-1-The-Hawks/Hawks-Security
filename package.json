@@ -1,0 +1,20 @@
+{
+  "name": "tp-1",
+  "version": "1.0.0",
+  "description": "Gestor de contraseñas.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docenv": "^2.0.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.4.0",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.1"
+  }
+}
