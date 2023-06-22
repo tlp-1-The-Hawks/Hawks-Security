@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<%- include('../partials/header') %>
     <title>Security Hawks</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../Css/listado.css" />
-    <link rel="icon" type="image/x-icon" href="../img/Mi proyecto.png" />
+    <link rel="stylesheet" href="../Css/inicio.css" />
   </head>
   <body>
     <header>
@@ -30,10 +18,7 @@
             <div class="row">
               <div class="col d-flex justify-content-center">
                 <h4>
-                  <a
-                    class="nav-link active p-2"
-                    aria-current="page"
-                    href="../Html/inicio.html"
+                  <a class="nav-link active p-2" aria-current="page" href="#"
                     >Inicio</a
                   >
                 </h4>
@@ -42,7 +27,7 @@
                 <h4>
                   <a
                     class="nav-link active p-lg-2 p-sm-3 p-3"
-                    href="../Html/listado.html"
+                    href="listado.html"
                     >Listados</a
                   >
                 </h4>
@@ -127,7 +112,7 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Html/incio_De_Sesion.html">
+                  <a class="nav-link" href="../Html/incio_De_Sesion.html">
                     <button
                       class="btn btn-outline-dark w-100 py-2"
                       type="submit"
@@ -142,58 +127,68 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="m-5">
       <section>
-        <h2 class="pb-2 text-center m-3">Listados de tus cuentas</h2>
-        <div class="container m-4 text-center">
-          <div class="row">
-            <div class="col-sm-3">
-              <h4 class="text-center">Nombre</h4>
-            </div>
-            <div class="col-sm-3">
-              <h4 class="text-center">Creado</h4>
-            </div>
-            <div class="col-sm-3">
-              <h4 class="text-center">Actividad</h4>
-            </div>
-            <div class="col-sm-3">
-              <h4
-                class="text-center text-md-end text-sm-end text-lg-end text-xl-end"
+        <div class="container px-4 py-5 text-center" id="featured-3">
+          <h2 class="pb-2">¿Que desea realizar?</h2>
+          <div
+            class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-center"
+          >
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
               >
-                Cuentas
-              </h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="95"
+                  height="95"
+                  fill="currentColor"
+                  class="bi bi-hammer"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z"
+                  />
+                </svg>
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Crear listado</h3>
+              <p>
+                Crear tus listados de tus cuentas para tener una mejor
+                organización y gestion, a su vez evita el olvido de las mismas.
+              </p>
+              <button class="boton1">
+                <a
+                  class="text-decoration-none text-white"
+                  href="#"
+                  class="icon-link"
+                >
+                  Crear
+                </a>
+              </button>
+            </div>
+            <div class="feature col">
+              <div
+                class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3"
+              >
+                <img class="w-25" src="../img/basurero.png" alt="" />
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Eliminar listado</h3>
+              <p>
+                Descarta los listados de las cuentas que ya no utilices, así
+                tendras mejor organizadas las cuentas con mayor prioridad.
+              </p>
+              <button class="boton1">
+                <a
+                  class="text-decoration-none text-white"
+                  href="#"
+                  class="icon-link"
+                >
+                  Eliminar
+                </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center">
-      <div class="container-fluid">
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="#"
-            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-          >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-black">© 2023 Hawks Security</span>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#dark-mode-toggle").click(function () {
-        $("body").toggleClass("dark-mode");
-      });
-    });
-  </script>
-</html>
+    <%- include('../partials/footer') %>
