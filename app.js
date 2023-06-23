@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-require('dotenv').config();
-PUERTO = process.env.PORT || 3000;
+
+const PORT = process.env.PORT || 3000;
 
 //Configuracion de las rutas
 app.use(require('./src/routes/inicio.routes'));
@@ -11,4 +11,4 @@ require('ejs');
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
-app.listen(port, console.log(`Servidor corriendo en ${port}`));
+app.listen(PORT, console.log(`Server is runing in port ${PORT}`));
