@@ -1,0 +1,158 @@
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/public/Css/listado.css" />
+    <title>Security Hawks</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top position-relative">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <img
+              class="logo d-flex align-content-center"
+              src="/public/img/Mi-proyecto.png"
+              alt=""
+            />
+            <h5 class="m-0">Security</h5>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col d-flex justify-content-center">
+                <h4>
+                  <a
+                    class="nav-link active p-2"
+                    aria-current="page"
+                    href="../Html/inicio.html"
+                    >Inicio</a
+                  >
+                </h4>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <h4>
+                  <a
+                    class="nav-link active p-lg-2 p-sm-3 p-3"
+                    href="listado.html"
+                    >Listados</a
+                  >
+                </h4>
+              </div>
+              <div class="col d-flex justify-content-center">
+                <h4>
+                  <a
+                    class="nav-link active p-2 text-center"
+                    href="../Html/soporte.html"
+                    >Soporte</a
+                  >
+                </h4>
+              </div>
+
+              <div class="col d-flex justify-content-center mh-50">
+                <button
+                  class="configuracionBoton"
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="offcanvas offcanvas-end configuraciones"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Configuraciones
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <button class="mode" id="dark-mode-toggle">
+                    Cambiar color
+                  </button>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Idiomas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/Html/inicio.html"
+                        >Español</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/Lo Mismo pero en ingles/inicio.html"
+                        >ingles</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Html/incio_De_Sesion.html">
+                    <button
+                      class="btn btn-outline-dark w-100 py-2"
+                      type="submit"
+                    >
+                      Cerrar sesión
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2 class="pb-2 text-center m-3">Listados de tus cuentas</h2>
+        <div class="container m-4 text-center">
+          <div class="row">
+            <div class="col-sm-3">
+              <h4 class="text-center">Nombre</h4>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="text-center">Creado</h4>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="text-center">Actividad</h4>
+            </div>
+            <div class="col-sm-3">
+              <h4
+                class="text-center text-md-end text-sm-end text-lg-end text-xl-end"
+              >
+                Cuentas
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%- include('../partials/footer') %>
