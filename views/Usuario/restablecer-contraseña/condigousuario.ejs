@@ -17,24 +17,23 @@
 <main class="d-flex justify-content-center align-items-center">
   <article>
     <section>
-      <form action="./codigodv.html" class="border border-dark p-3">
-        <h1 class="h3 mb-3 fw-normal text-white text-center">
-          Ingrese su correo
+      <form action="./newpassword.html" class="border border-dark p-3">
+        <h1 class="h3 mb-3 fw-normal text-white">
+          Ingrese el codigo que le hemos enviado
         </h1>
         <input
-          type="email"
+          type="number"
           class="form-control"
           id="floatingInput"
-          placeholder="name@example.com"
+          placeholder="0000 0000 0000"
           required
-          aria-label="ingrese su Email"
         />
         <p class="p-3 text-white">
           Te enviaremos un codigo de confirmación
         </p>
-        <button class="text-white" type="submit">Enviar</button>
+        <button class="text-white" type="submit">Confirmar</button>
       </form>
     </section>
   </article>
 </main>
-<%- include('../partials/footer') %>
+<%- include('../../partials/footer') %>

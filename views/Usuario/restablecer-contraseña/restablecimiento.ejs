@@ -1,8 +1,8 @@
-<%- include('../partials/header') %>
+<%- include('../../partials/header') %>
 <title>Restablecimiento</title>
 <link
   rel="stylesheet"
-  href="../../Css/restablecer contraseña/stylerdc.css"
+  href="/public/Css/restablecer contraseña/stylerdc.css"
 />
 </head>
 <body>
@@ -17,23 +17,24 @@
 <main class="d-flex justify-content-center align-items-center">
   <article>
     <section>
-      <form action="./newpassword.html" class="border border-dark p-3">
-        <h1 class="h3 mb-3 fw-normal text-white">
-          Ingrese el codigo que le hemos enviado
+      <form action="./codigodv.html" class="border border-dark p-3">
+        <h1 class="h3 mb-3 fw-normal text-white text-center">
+          Ingrese su correo
         </h1>
         <input
-          type="number"
+          type="email"
           class="form-control"
           id="floatingInput"
-          placeholder="0000 0000 0000"
+          placeholder="name@example.com"
           required
+          aria-label="ingrese su Email"
         />
         <p class="p-3 text-white">
           Te enviaremos un codigo de confirmación
         </p>
-        <button class="text-white" type="submit">Confirmar</button>
+        <button class="text-white" type="submit">Enviar</button>
       </form>
     </section>
   </article>
 </main>
-<%- include('../partials/footer') %>
+<%- include('../../partials/footer') %>
