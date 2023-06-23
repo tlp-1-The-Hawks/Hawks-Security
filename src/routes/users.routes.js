@@ -10,18 +10,18 @@ routes.get('/registro', (req, res) => {
   res.render('usuario/register');
 });
 routes.get('/', (req, res) => {
-  res.render('usuario/register');
+  res.render('usuario/iniciodesesion');
 });
 
 //Restablecer contraseña
 
 routes.get('/restablecer', (req, res) => {
-  res.render('usuario/restablecer-contraseña/restablecimiento');
+  res.render('usuario/restablecer/restablecimiento');
 });
 routes.get('/restablecer/codigo', (req, res) => {
-  res.render('usuario/restablecer-contraseña/condigousuario');
+  res.render('usuario/restablecer/condigousuario');
 });
 routes.get('/restablecer/contrasenia', (req, res) => {
-  res.render('usuario/restablecer-contraseña/nuevacontra');
+  res.render('usuario/restablecer/nuevacontrasenia');
 });
 module.exports = routes;
