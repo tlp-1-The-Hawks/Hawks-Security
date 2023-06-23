@@ -1,7 +1,7 @@
 const {sequelize, DataTypes} = require('../../db');
 
-const Cuentas = sequelize.define(
-  'UsuarioCuentas',
+const cuentas = sequelize.define(
+  'usuarioCuentas',
   {
     tipoCuenta: {
       type: DataTypes.STRING,
@@ -43,11 +43,11 @@ const Cuentas = sequelize.define(
     createdAt: true,
     updatedAt: true,
     deletedAt: true,
-    tableName: 'usuarios',
+    tableName: 'usuariosCuentas',
   }
 );
 
 // Crear tabla si no existe
-Cuentas.sync();
+cuentas.sync();
 
-module.exports = Cuentas;
+module.exports = cuentas;
