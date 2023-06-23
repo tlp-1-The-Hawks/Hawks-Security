@@ -2,6 +2,13 @@ const express = require('express');
 const app = express();
 
 require('dotenv').config();
-port = process.env.PORT || 3000;
+PUERTO = process.env.PORT || 3000;
 
-app.listen(port, console.log(`Servidor corriendo en ${port}`));
+app.get('/inicio', (req, res) => {
+  res.sendFile(__dirname + '/Html/inicio.html');
+});
+app.use(express.static(__dirname));
+
+app.listen(PUERTO, () => {
+  console.log(`El servidor esta escuchando en el puerto: ${PUERTO}`);
+});
