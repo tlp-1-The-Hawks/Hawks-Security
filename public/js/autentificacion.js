@@ -1,3 +1,3 @@
-const mensajeError = document.getElementById('mensaje_error')
+const mensajeError = document.getElementById('mensaje_error');
 
-mensajeError.innerHTML = "El email o contraseña son incorrectos";
+mensajeError.innerHTML = 'El email o contraseña son incorrectos';

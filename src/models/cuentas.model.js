@@ -1,14 +1,15 @@
-const {sequelize, DataTypes} = require('../../db');
+'use strict';
+const {sequelize, DataTypes} = require('../../database/db');
 
-const cuentas = sequelize.define(
+const Cuentas = sequelize.define(
   'usuarioCuentas',
   {
     tipoCuenta: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(50),
       allowNull: true,
     },
     email: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(50),
       allowNull: false,
       unique: {
         args: true,
@@ -39,15 +40,15 @@ const cuentas = sequelize.define(
     },
   },
   {
-    // Other model options go here
-    createdAt: true,
-    updatedAt: true,
-    deletedAt: true,
-    tableName: 'usuariosCuentas',
+    sequelize,
+    paranoid: true,
+    modelName: 'Reserva',
+    tableName: 'reservas',
+    underscored: true,
   }
 );
 
 // Crear tabla si no existe
-cuentas.sync();
+Cuentas.sync();
 
-module.exports = cuentas;
+module.exports = Cuentas;

@@ -1,27 +1,42 @@
-const routes = require('express').Router();
+const express = require('express');
+const router = express.Router();
 
 //Rutas para renderizar las vistas de usuario
 
 //Inicio de sesion y registro
-routes.get('/iniciodesesion', (req, res) => {
-  res.render('usuario/iniciodesesion');
+router.get('/', (req, res) => {
+  res.render('usuario/login');
 });
-routes.get('/registro', (req, res) => {
+
+router.get('/registro', (req, res) => {
   res.render('usuario/register');
-});
-routes.get('/', (req, res) => {
-  res.render('usuario/iniciodesesion');
 });
 
 //Restablecer contraseña
 
-routes.get('/restablecer', (req, res) => {
+router.get('/restablecer', (req, res) => {
   res.render('usuario/restablecer/restablecimiento');
 });
-routes.get('/restablecer/codigo', (req, res) => {
+router.get('/restablecer/codigo', (req, res) => {
   res.render('usuario/restablecer/condigousuario');
 });
-routes.get('/restablecer/contrasenia', (req, res) => {
+router.get('/restablecer/contrasenia', (req, res) => {
   res.render('usuario/restablecer/nuevacontrasenia');
 });
-module.exports = routes;
+
+// Pagina de inicio
+
+router.get('/inicio', (req, res) => {
+  res.render('/inicio/inicio');
+});
+
+// listado
+router.get('/listado', (req, res) => {
+  res.render('inicio/listado');
+});
+
+// Soporte
+router.get('/Soporte', (req, res) => {
+  res.render('inicio/soporte');
+});
+module.exports = router;

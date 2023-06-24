@@ -1,7 +1,8 @@
-const {sequelize, DataTypes} = require('../../db');
+'use strict';
+const {sequelize, DataTypes} = require('../../database/db');
 
 const Usuario = sequelize.define(
-  'usuario',
+  'Usuario',
   {
     nombres: {
       type: DataTypes.STRING,
@@ -35,15 +36,13 @@ const Usuario = sequelize.define(
     },
   },
   {
-    // Other model options go here
-    createdAt: true,
-    updatedAt: true,
-    deletedAt: true,
-    tableName: 'usuarios',
+    sequelize,
+    paranoid: true,
+    modelName: 'Usuario',
+    tableName: 'usuario',
+    underscored: true,
   }
 );
-
-// Crear tabla si no existe
 Usuario.sync();
 
 module.exports = Usuario;
