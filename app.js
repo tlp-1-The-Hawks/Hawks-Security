@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
+const morgan = require("morgan")
+const cors = require("cors")
+const helmet = require("helmet")
 //Configuracion de middlewares
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
@@ -24,5 +27,8 @@ app.set('view engine', 'ejs');
 app.use(require('./src/routes/inicio.routes'));
 app.use(require('./src/routes/users.routes'));
 app.use(express.static(__dirname));
+app.use(morgan("dev"))
+app.use(cors())
+app.use(helmet())
 
 app.listen(PORT, console.log(`Server is runing in port ${PORT}`));
