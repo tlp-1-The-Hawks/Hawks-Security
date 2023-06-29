@@ -1,10 +1,16 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
+//Configuracion de middlewares
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
 
 const PORT = process.env.PORT || 3000;
 
 // Se importa la instancia de conexión a la base de datos - (debe ser después de leer las variables de entorno)
-const {sequelize} = require('./database/db');
+const { sequelize } = require('./database/db');
+
 
 // Se ejecuta una instancia de conexión a la base de datos
 sequelize
