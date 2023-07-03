@@ -1,4 +1,3 @@
-'use strict';
 const { sequelize, DataTypes } = require('../../database/db');
 
 const Usuario = sequelize.define(
