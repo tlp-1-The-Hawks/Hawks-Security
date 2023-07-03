@@ -18,7 +18,7 @@ const Usuario = sequelize.define(
       allowNull: false,
       unique: {
         args: true,
-        messge: 'El email ya existe',
+        message: 'El email ya existe',
       },
     },
     password: {
