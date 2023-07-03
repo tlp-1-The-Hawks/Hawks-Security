@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { renderinicioSesion, renderregistro, renderrestablecer, renderCodigo, rendernuevaContra } = require('../controllers/users.controllers');
+const { renderinicioSesion, renderregistro, renderrestablecer, renderCodigo, rendernuevaContra, CrearUsuario } = require('../controllers/users.controllers');
 
 //Rutas para renderizar las vistas de usuario
 
@@ -19,19 +19,19 @@ router.get('/restablecer/contrasenia', rendernuevaContra);
 
 
 
-// Obtener todas las reservas
+// obtener cuentas
 router.get('/api',);
 
-// Crear una reserva
-router.post('/api',);
+// crear cuenta
+router.post('/api', CrearUsuario);
 
-//obtener una reserva
+//obtener una cuenta
 router.get('/api/:id',)
 
-// Actualizar una reserva
+// actualizar cuenta
 router.put('/api/:id',);
 
-// Eliminar una reserva de forma lógica
+// Eliminar una cuenta de forma lógica
 router.delete('/api/:id',);
 
 

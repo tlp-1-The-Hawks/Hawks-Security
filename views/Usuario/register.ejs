@@ -12,13 +12,13 @@
       </nav>
 </header>
     <main>
-      <form action="/middlewares/auth.js" method="POST">
+      <form action="" id="formularioCrearCuenta">
       <section class="form-register">
       <h4 class="text-center">Complete el formulario:</h4>
-      <input name="nombre" type="text" placeholder="Ingrese su nombre" class="controls" require>
-      <input name="apellido" type="text" placeholder="Ingrese su apellido" class="controls" require>
-        <input name="email" type="email" placeholder="Ingrese su email" class="controls" require>
-        <input name="password" type="password" placeholder="Ingrese su contraseña" class="controls" minlength="6" maxlength="12" require>
+      <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" class="controls" require>
+      <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" class="controls" require>
+        <input id="email" name="email" type="email" placeholder="Ingrese su email" class="controls" require>
+        <input id="password" name="password" type="password" placeholder="Ingrese su contraseña" class="controls" minlength="6" maxlength="12" require>
         <input name="confirm_password" type="password" placeholder="Ingrese nuevamente su contraseña" class="controls" minlength="6" maxlength="12" require>
       
           <div class="d-flex justify-content-center">
@@ -38,4 +38,5 @@
       </section>
       </form>
     </main>
+    <script src="/public/js/guardarcontra.js"></script>
     <%- include('../partials/footer') %>
