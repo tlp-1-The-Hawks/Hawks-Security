@@ -7,7 +7,11 @@ crearCuenta.addEventListener('submit', async (e) => {
     const apellido = document.querySelector('#apellido').value;
     const email = document.querySelector('#email').value;
     const password = document.querySelector('#password').value;
+    const confirmarPassword = document.querySelector('#confirmarPassword').value;
 
+if (confirmarPassword != password){
+    alert('Las contraseñas no coinciden')
+}else{
     const usuario = {
         nombre,
         apellido,
@@ -15,7 +19,7 @@ crearCuenta.addEventListener('submit', async (e) => {
         password
     }
 
-    const response = await fetch('http://localhost:3000/api', {
+    const response = await fetch('/api', {
         method: 'POST',
         body: JSON.stringify(usuario),
         headers: {
@@ -28,5 +32,8 @@ crearCuenta.addEventListener('submit', async (e) => {
     const data = await response.json()
     alert(data.message);
     window.location.href = '/';
+
+}
+    
 
 })

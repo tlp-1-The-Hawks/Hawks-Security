@@ -6,7 +6,6 @@
 <body>
 <header class="d-flex">
   <div class="d-flex align-items-center">
-    <img src="../img/Mi proyecto.png" alt="" />
   </div>
   <nav class="container d-flex justify-content-center align-items-center">
     <h4 class="text-black">¡Bienvenido a Security Hawks!</h4>
@@ -30,10 +29,11 @@
         </div>
       </div>
       <div class="col d-flex align-items-center justify-content-center">
-        <form action="/inicio" id="formulario">
+        <form action="" id="formularioInicioSesion" method="post">
           <h1 class="h3 mb-3 fw-normal text-center">Inicio de Sesión</h1>
           <div class="form-floating m-1">
             <input
+              id="email"
               name="email"
               type="email"
               class="form-control"
@@ -47,6 +47,7 @@
           </div>
           <div class="form-floating m-1">
             <input
+              id="password"
               name="password"
               type="password"
               class="form-control"
@@ -91,4 +92,5 @@
     </div>
   </section>
 </main>
+<script src="/public/js/iniciarsesion.js"></script>
 <%- include('../partials/footer') %>

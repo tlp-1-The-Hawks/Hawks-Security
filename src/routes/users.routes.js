@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { renderinicioSesion, renderregistro, renderrestablecer, renderCodigo, rendernuevaContra, CrearUsuario } = require('../controllers/users.controllers');
+const { renderinicioSesion, renderregistro, renderrestablecer, renderCodigo, rendernuevaContra, CrearUsuario, IniciarSesion } = require('../controllers/users.controllers');
 
 //Rutas para renderizar las vistas de usuario
 
@@ -24,6 +24,9 @@ router.get('/api',);
 
 // crear cuenta
 router.post('/api', CrearUsuario);
+
+//Iniciar sesion
+router.post('/iniciar-sesion', IniciarSesion);
 
 //obtener una cuenta
 router.get('/api/:id',)

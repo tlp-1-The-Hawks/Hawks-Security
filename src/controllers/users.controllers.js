@@ -1,6 +1,7 @@
 const usuarioCtrl = {};
 const { render } = require('ejs');
-const Usuario = require('../models/users.model')
+const Usuario = require('../models/users.model');
+const e = require('cors');
 
 //Renders 
 usuarioCtrl.renderinicioSesion = (req, res) => {
@@ -37,7 +38,7 @@ usuarioCtrl.renderSoporte = (req, res) => {
     res.render('inicio/soporte')
 };
 
-//Controladores para iniciar sesion para el suaurio
+//controlador para registrarse
 usuarioCtrl.CrearUsuario = async (req, res) => {
     const {
         nombre,
@@ -65,6 +66,36 @@ usuarioCtrl.CrearUsuario = async (req, res) => {
         })
     }
 }
+//controlador para iniciar sesion
+usuarioCtrl.IniciarSesion = async (req, res) => {
+    const {email, password} = req.body; 
+    
+    try {
+        const usuario = await Usuario.findByPk(email, password)
 
+        if (!usuario.email ) {
+            message = 'email incorrecto'
+        }else {
+            if (!usuario.password){
+                message = 'contraseña incorrecta'
+            }else{
+                return res.status(200).json({
+                    message: 'Iniciado sesion correctamente'
+                })
+            }
+        } 
+
+        
+            
+
+    }catch (error){
+        console.log(error);
+        return res.status(error.status || 500).json({
+            message: 'Error al iniciar sesion'.error
+        })
+    };
+
+
+}
 
 module.exports = usuarioCtrl;
