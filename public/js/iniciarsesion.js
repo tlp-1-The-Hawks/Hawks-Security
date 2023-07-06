@@ -11,7 +11,8 @@ formulario.addEventListener('submit', async (e) => {
         password
     }
 
-    const response = await fetch('/iniciar-sesion', {
+
+    const response = await fetch('/iniciar-sesion/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -21,4 +22,7 @@ formulario.addEventListener('submit', async (e) => {
 
     const data = await response.json()
     alert(data.message);
+    if (response.status === 200){
+        window.location.href = '/inicio'
+    }
 })

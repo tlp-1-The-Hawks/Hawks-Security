@@ -26,7 +26,7 @@ router.get('/api',);
 router.post('/api', CrearUsuario);
 
 //Iniciar sesion
-router.post('/iniciar-sesion', IniciarSesion);
+router.post('/iniciar-sesion/', IniciarSesion);
 
 //obtener una cuenta
 router.get('/api/:id',)

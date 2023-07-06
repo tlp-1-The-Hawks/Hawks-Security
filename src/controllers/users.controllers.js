@@ -2,6 +2,7 @@ const usuarioCtrl = {};
 const { render } = require('ejs');
 const Usuario = require('../models/users.model');
 const e = require('cors');
+const { crossOriginResourcePolicy } = require('helmet');
 
 //Renders 
 usuarioCtrl.renderinicioSesion = (req, res) => {
@@ -68,34 +69,31 @@ usuarioCtrl.CrearUsuario = async (req, res) => {
 }
 //controlador para iniciar sesion
 usuarioCtrl.IniciarSesion = async (req, res) => {
-    const {email, password} = req.body; 
-    
     try {
-        const usuario = await Usuario.findByPk(email, password)
-
-        if (!usuario.email ) {
-            message = 'email incorrecto'
-        }else {
-            if (!usuario.password){
-                message = 'contraseña incorrecta'
-            }else{
-                return res.status(200).json({
-                    message: 'Iniciado sesion correctamente'
-                })
-            }
+      const { email, password } = req.body;
+      const usuario = await Usuario.findOne({ where: { email } }); // Utiliza "findOne" en lugar de "findByPk" y usa "where" para especificar la condición de búsqueda
+      if (!usuario) {
+        return res.status(404).json({
+          message: 'Usuario no encontrado'
+        });
+      }else {if (usuario.password !== password) { // Cambia "Usuario" a "usuario" en las verificaciones de contraseña
+        return res.status(401).json({
+          message: 'Contraseña incorrecta'
         } 
-
-        
-            
-
-    }catch (error){
-        console.log(error);
-        return res.status(error.status || 500).json({
-            message: 'Error al iniciar sesion'.error
-        })
-    };
-
-
-}
+        )}else {
+            return res.status(200).json({
+              message: 'Haz iniciado sesion',
+            });
+          }
+    
+    }
+    } catch (error) {
+      console.log("Error al iniciar sesión", error); // Ajusta la frase de error
+      return res.status(500).json({
+        message: 'Error al iniciar sesión'
+      });
+    }
+  };
+  
 
 module.exports = usuarioCtrl;
